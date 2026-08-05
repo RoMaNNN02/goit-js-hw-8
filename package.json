@@ -1,0 +1,24 @@
+{
+  "name": "goit-js-hw-8",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/RoMaNNN02/goit-js-hw-8#readme",
+  "bugs": {
+    "url": "https://github.com/RoMaNNN02/goit-js-hw-8/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoMaNNN02/goit-js-hw-8.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}
