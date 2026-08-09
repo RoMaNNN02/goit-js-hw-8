@@ -1,0 +1,2 @@
+let e=document.querySelector("#bookmarkInput"),t=document.querySelector("#addBookmarkBtn"),n=document.querySelector("#bookmarkList");t.addEventListener("click",()=>{let t=document.createElement("li"),o=document.createElement("a"),c=document.createElement("button");c.textContent="Видалити",o.href=e.value,o.textContent=e.value,t.append(o,c),n.append(t),c.addEventListener("click",()=>{t.remove()})});
+//# sourceMappingURL=goit-js-hw-8.ef5e700d.js.map
