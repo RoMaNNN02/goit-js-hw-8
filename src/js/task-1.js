@@ -20,7 +20,6 @@ const handleLinkInput = () => {
     list.innerHTML = createBookmarkMarkup(links);
     storage.save(STORAGE_BOOKMARK_KEY, links);
   }
-  const removeBtn = document.querySelectorAll(".removeBtn");
   const handleRemoveLinkInput = (e) => {
     const task = e.target.closest("[data-id]");
     if (task) {
@@ -31,5 +30,6 @@ const handleLinkInput = () => {
       storage.save(STORAGE_BOOKMARK_KEY, links);
     }
   };
+  list.addEventListener("click", handleRemoveLinkInput);
 };
 btn.addEventListener("click", handleLinkInput);
