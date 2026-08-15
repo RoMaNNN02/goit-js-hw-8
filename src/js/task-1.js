@@ -20,16 +20,16 @@ const handleLinkInput = () => {
     list.innerHTML = createBookmarkMarkup(links);
     storage.save(STORAGE_BOOKMARK_KEY, links);
   }
-  const handleRemoveLinkInput = (e) => {
-    const task = e.target.closest("[data-id]");
-    if (task) {
-      const id = task.dataset.id;
-      const indexToRemove = links.findIndex((task) => task.id === id);
-      links.splice(indexToRemove, 1);
-      list.innerHTML = createBookmarkMarkup(links);
-      storage.save(STORAGE_BOOKMARK_KEY, links);
-    }
-  };
-  list.addEventListener("click", handleRemoveLinkInput);
 };
+const handleRemoveLinkInput = (e) => {
+  const task = e.target.closest("[data-id]");
+  if (task) {
+    const id = task.dataset.id;
+    const indexToRemove = links.findIndex((task) => task.id === id);
+    links.splice(indexToRemove, 1);
+    list.innerHTML = createBookmarkMarkup(links);
+    storage.save(STORAGE_BOOKMARK_KEY, links);
+  }
+};
+list.addEventListener("click", handleRemoveLinkInput);
 btn.addEventListener("click", handleLinkInput);
