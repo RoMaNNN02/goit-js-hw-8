@@ -1,4 +1,7 @@
-<li class="bookmarkItem">
-  <a href="{{link}}" class="bookmarkLink">{{link}}</a>
-  <button class="removeBtn">Видалити</button>
-</li>
+<ul>{{#each this}}
+    <li data-id="{{id}}" class="bookmarkItem">
+      <a href="{{link}}" class="bookmarkLink">{{link}}</a>
+      <button class="removeBtn">Видалити</button>
+    </li>
+  {{/each}}
+</ul>
